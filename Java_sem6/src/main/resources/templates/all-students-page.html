@@ -1,0 +1,12 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<body>
+		<table>
+			<tr th:each="temp : ${students}">
+				<td th:text="${temp.getIds()}"> </td>
+				<td th:text="${temp.getName()}"> </td>
+				<td th:text="${temp.getSurname()}"> </td>
+			</tr>
+		</table>
+	</body>
+</html>

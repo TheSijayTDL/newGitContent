@@ -1,0 +1,12 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<body>
+		<table>
+			<tr th:each="temp : ${cities}">
+				<td th:text="${temp.getIdtr()}"> </td>
+				<td th:text="${temp.getStartDateTime()}"> </td>
+				<td th:text="${temp.getDuration()}"> </td>
+			</tr>
+		</table>
+	</body>
+</html>
